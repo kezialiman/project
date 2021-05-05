@@ -22,7 +22,7 @@ function App() {
       </div>
       <div>
         <h1>Hi, I'm Kezia Liman</h1>
-        <p>Fresh grad software engineer based in Berkeley, CA</p>
+        <p className="opening">Fresh grad software engineer based in Berkeley, CA</p>
         <div>
           <a id="about-me">
           <h5>About Me:</h5>

@@ -128,5 +128,10 @@
     .project__container-card:hover {
       transform: none;
     }
+
+    .project__container-cardInfo p {
+      margin-top: -5px;
+      margin-bottom: -5px;
+    }
   }
   

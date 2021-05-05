@@ -153,3 +153,19 @@ svg {
 svg:hover {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  h6 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .opening {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
