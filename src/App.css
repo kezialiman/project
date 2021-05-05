@@ -40,7 +40,6 @@ h5 {
   font-weight: 400;
   font-family: 'Courier New', monospace;
   font-size: 25px;
-  /*margin-bottom: -35px;*/
 }
 
 h5:hover {
@@ -141,7 +140,8 @@ a {
 
 svg {
   margin-top: -20px;
-  padding-left: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #999;
   opacity: 1.0;
   height: 64px;
@@ -165,8 +165,21 @@ svg:hover {
     padding-right: 30px;
   }
 
+  h7 {
+    font-size: 15px;
+  }
+
   .opening {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  svg {
+    height: 50px;
+  }
+
+  .svg-icon svg {
+    height: 1.5em;
+    width: 1.5em;
   }
 }
