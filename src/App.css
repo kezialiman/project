@@ -40,26 +40,12 @@ h5 {
   font-weight: 400;
   font-family: 'Courier New', monospace;
   font-size: 25px;
+  margin-bottom: -35px;
 }
 
 h5:hover {
   transform: scale(1.2);
   color: #4a8ecb;
-}
-
-.row_full{
-  width: 100%;
-  height: 50px;
-  /*background-image: url(./logo/blob-background-7.jpeg);*/
-  /*background: linear-gradient(50deg, #dddbd5 0%, #4a8ecb 90%);*/
- }
-
-p {
-  color: #999;
-  font-weight: 400;
-  @media (orientation: landscape) {
-    text-align: center;
-  }
 }
 
 h6 {
@@ -83,6 +69,21 @@ h7 {
   font-family: 'Courier New', monospace;
   @media (orientation: landscape) {
     text-align: left;
+  }
+}
+
+.row_full{
+  width: 100%;
+  height: 50px;
+  /*background-image: url(./logo/blob-background-7.jpeg);*/
+  /*background: linear-gradient(50deg, #dddbd5 0%, #4a8ecb 90%);*/
+ }
+
+p {
+  color: #999;
+  font-weight: 400;
+  @media (orientation: landscape) {
+    text-align: center;
   }
 }
 

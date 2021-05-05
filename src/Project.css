@@ -5,7 +5,7 @@
     position: relative;
     flex-direction: column;
     justify-content: center;
-    margin-top: -40px;
+    padding-top: 50px;
   }
   
   .project__container-card {
@@ -110,6 +110,7 @@
     .project__container-card {
       width: 100%;
       height: auto;
+      display: flex;
     }
   
     .project__wrapper {
@@ -132,6 +133,7 @@
     .project__container-cardInfo p {
       margin-top: -5px;
       margin-bottom: -5px;
+      font-size: 15px;
     }
   }
   
