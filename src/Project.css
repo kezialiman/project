@@ -1,0 +1,132 @@
+.project__section {
+    padding: 20px 0 40px;
+    display: flex;
+    width: 100vw;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -40px;
+    overflow: "scroll";
+  }
+  
+  .project__container-card {
+    background: linear-gradient(45deg, #4a8ecb 0%, #cccac4 100%);
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
+    width: 400px;
+    height: 600px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .project__container-card:nth-child(2) {
+    transform: scale(1.0);
+    background: linear-gradient(45deg, #fde65d 0%, #cccac4 100%);
+  }
+  
+  .project__container-card:hover {
+    transform: scale(1.06);
+    transition: all 0.3s ease-out;
+    color: #1c2237;
+  }
+  
+  .project__container-card:nth-child(2) {
+    margin: 0 24px;
+  }
+  
+  .project__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  
+  .project__heading {
+    color: #1c2237;
+    margin-bottom: 24px;
+  }
+  
+  .project__container-cardInfo {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 24px;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .project__container-cardInfo h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+
+  .project__container-cardInfo h2 {
+    font-size: 18px;
+  }
+  
+  .project__container-cardInfo h4 {
+    font-size: 40px;
+  }
+  
+  .project__container-cardInfo p {
+    font-size: 18px;
+    color: #d0e2f1;
+  }
+  
+  .project__container-features {
+    margin: 16px 0 32px;
+  }
+  
+  .project__container-features li {
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  .project__container-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project_icon {
+    width: auto;
+    max-width: 320px;
+    max-height: 200px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .project__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .project__container-card {
+      width: 90%;
+    }
+  
+    .project__wrapper {
+      margin: 0 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project__container-card:nth-child(2) {
+      transform: scale(1);
+      background: linear-gradient(45deg, #fde65d 0%, #cccac4 100%);
+      margin: 24px;
+    }
+  
+    .project__container-card:hover {
+      transform: none;
+    }
+  }
+  
