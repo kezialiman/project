@@ -66,10 +66,10 @@ function App() {
         </a>
       </div>
       <div className='svg-icon'>
-        <h7>Powered by:
+        <h7>Language:
         Java<Java />
-        |Python<Python />
-        |PostgreSQL<Postgresql />
+        | Python<Python />
+        | PostgreSQL<Postgresql />
         </h7>
       </div>
       <div className="row_full"></div>

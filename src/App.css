@@ -179,6 +179,8 @@ svg:hover {
   }
 
   .svg-icon svg {
+    padding-left: 10px;
+    padding-right: 10px;
     height: 1.5em;
     width: 1.5em;
   }
