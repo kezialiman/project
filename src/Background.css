@@ -1,0 +1,133 @@
+.background__section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  
+  .background__container-card {
+    background: linear-gradient(45deg, #cadcec 0%, #f3eddd 100%);
+    border-radius: 50%;
+    /*border: 0px solid white;*/
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0px #000000, 0 0 15px #0001;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+  .background__container-card:nth-child(2) {
+    background: linear-gradient(45deg, #d39775 0%, #d8e6f1 100%);
+  }
+  
+  .background__container-card:hover {
+    transform: scale(1.06);
+    transition: all 0.3s ease-out;
+    color: #1c2237;
+  }
+  
+  .background__container-card:nth-child(2) {
+    margin: 0 24px;
+  }
+  
+  .background__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  
+  .background__container-cardInfo {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 24px;
+    align-items: center;
+    color: #4e4c44;
+  }
+  
+  .background__container-cardInfo h3 {
+    font-size: 20px;
+    margin-top: -1 px;
+    display: flex;
+  }
+
+  .background__container-cardInfo h2 {
+    font-size: 18px;
+  }
+  
+  .background__container-cardInfo h4 {
+    font-size: 40px;
+  }
+  
+  .background__container-cardInfo p {
+    font-size: 15px;
+    font-weight:500;
+    margin-top: -15px;
+    color: #4e4c44;
+  }
+  
+  .background__container-features li {
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  .background__container-features {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: -10px;
+    padding-bottom: 10px;
+  }
+
+  .background_icon {
+    width: auto;
+    max-width: 280px;
+    max-height: 200px;
+  }
+  
+  @media screen and (max-width: 760px) {
+    .background__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .background__container-card {
+      width: 100%;
+      display: flex;
+    }
+  
+    .background__wrapper {
+      margin: 0 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .background__container-card:nth-child(2) {
+      margin: 24px;
+    }
+  
+    .background__container-card:hover {
+      transform: none;
+    }
+
+    .background__container-cardInfo p {
+      font-size: 14px;
+    }
+
+    .background__container-features li {
+        font-size: 14px;
+      }
+
+  }
+  
