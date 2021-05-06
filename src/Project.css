@@ -18,8 +18,8 @@
   }
   
   .project__container-card:nth-child(2) {
-    transform: scale(1.0);
-    background: linear-gradient(45deg, #fde65d 0%, #cccac4 100%);
+    /*background: linear-gradient(45deg, #fde65d 0%, #cccac4 100%);*/
+    background: linear-gradient(45deg, #e7a477 0%, #b4dde7 100%);
   }
   
   .project__container-card:hover {
@@ -120,8 +120,6 @@
     }
   
     .project__container-card:nth-child(2) {
-      transform: scale(1);
-      background: linear-gradient(45deg, #fde65d 0%, #cccac4 100%);
       margin: 24px;
     }
   

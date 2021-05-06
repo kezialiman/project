@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Project from './Project';
+import Highlights from './pages/Highlights';
+import AboutMe from './pages/AboutMe';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -10,7 +11,8 @@ ReactDOM.render(
 <BrowserRouter>
   <Switch>
    <Route exact path="/" component={App} />
-   <Route path="/Project" component={Project} />
+   <Route path="/Highlights" component={Highlights} />
+   <Route path="/AboutMe" component={AboutMe} />
  </Switch>
  </BrowserRouter>,
   document.getElementById('root')

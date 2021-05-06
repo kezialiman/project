@@ -1,72 +1,76 @@
-import logo from './kezia_profile_art.jpg';
-import { Button } from './Button';
 import './App.css';
+import Project from "./Project";
+import Background from "./Background";
+import logo from './logo/kezia_formal.jpg';
+import { Button } from './Button';
 import { ReactComponent as Email } from "./logo/gmail.svg";
 import { ReactComponent as Github } from "./logo/github.svg";
 import { ReactComponent as LinkedIn } from "./logo/linked_in.svg";
 import { ReactComponent as Postgresql } from "./logo/postgresql.svg";
 import { ReactComponent as Python } from "./logo/python.svg";
 import { ReactComponent as Java } from "./logo/java.svg";
-import Project from "./Project";
+import { HEADING, TEXT, WEBLINK } from "./Constants";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <img className='home_profile' src={logo} alt="Logo" />
       <div className="menu">
-          <a className="sub-menu" herf="#about-me">About Me</a>
+          <a className="sub-menu">{HEADING.home}</a>
           <a> | </a>
-          <a className="sub-menu" href="#project">Projects</a>
+          <a className="sub-menu" href="#about-me">{HEADING.aboutMe}</a>
           <a> | </a>
-          <a className="sub-menu" href="#connect">Connect</a>
+          <a className="sub-menu" href="#project">{HEADING.highlights}</a>
+          <a> | </a>
+          <a className="sub-menu" href="#connect">{HEADING.connect}</a>
       </div>
       <div>
-        <h1>Hi, I'm Kezia Liman</h1>
-        <p className="opening">Fresh grad software engineer based in Berkeley, CA</p>
+        <h1>{TEXT.introduction}</h1>
+        <p className="opening">{TEXT.opening}</p>
         <div>
           <a id="about-me">
-          <h5>About Me:</h5>
-          <h6>The rapid rise of online applications has opened my eyes to the power of 
-          technology in elevating today's business. With my growing passion and eagerness to know
-          more about this industry, I am taking Electrical Engineering and Computer Science as my
-          major in <a href="https://eecs.berkeley.edu">UC Berkeley</a>. Outside of taking technical courses, I also took business and linear
-          programming courses. I had 4 months internship experience for a <a href="https://oyindonesia.com">fintech company </a>
-          in Indonesia as a product engineer in the payment acceptance team.
-          <br></br>
-          <br></br>
-          I am currently looking for a full-time or internship as opportunities to hone my skills
-          in software engineering or product engineering. 
+          <h5>{HEADING.aboutMe}:</h5>
+          <h6>{TEXT.about_me_part_1a}<a href={WEBLINK.berkeley}>UC Berkeley</a>{TEXT.about_me_part_1b}
+            <br></br><br></br>
+            {TEXT.about_me_part_2a}<a href={WEBLINK.oy}>fintech company </a>{TEXT.about_me_part_2b}
+            <br></br><br></br>
+            {TEXT.about_me_part_3} 
+            <br></br>
+            <Link to='/AboutMe'>{TEXT.see_more}</Link>
           </h6>
           </a>
         </div>
+        <div>
+          <Background />
+        </div>
         <a id="project">
-        <h5>Projects:</h5>
         <Project />
         </a>
-        <Button onClick='https://github.com/kezialiman/project.git' buttonSize='btn--wide' buttonColor='blue'>
-            Explore More Projects
+        <Button onClick={WEBLINK.github} buttonSize='btn--wide' buttonColor='blue'>
+            {TEXT.more_projects}
         </Button>
       </div>
       <div className="connect">
-        <h5>Connect:</h5>
-        <h6>Feel free to connect and reach out to me for any inquiries.
+        <h5>{HEADING.connect}:</h5>
+        <h6>{TEXT.connect}
           <br></br>
-          Email: kezialiman@gmail.com  |  LinkedIn: Kezia Liman
+          {TEXT.direct}
         </h6>
         <a id="connect">
-        <a href="mailto:kezialiman@gmail.com">
+        <a href={WEBLINK.email}>
           <Email />
         </a>
-        <a href="https://www.linkedin.com/in/kezialiman">
+        <a href={WEBLINK.linkedIN}>
           <LinkedIn />
         </a>
-        <a href="https://github.com/kezialiman/project.git">
+        <a href={WEBLINK.github}>
           <Github />
         </a>
         </a>
       </div>
       <div className='svg-icon'>
-        <h7>Language:
+        <h7>{HEADING.language}:
         Java<Java />
         | Python<Python />
         | PostgreSQL<Postgresql />
